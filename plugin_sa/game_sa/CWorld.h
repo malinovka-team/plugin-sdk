@@ -42,7 +42,7 @@ public:
     static bool &bNoMoreCollisionTorque;
     static bool &bDoingCarCollisions;
     // Current player
-    static char &PlayerInFocus;
+    static unsigned char &PlayerInFocus;
     static int  &ms_nCurrentScanCode;
     // Player data array for 2 players
     static CPlayerInfo *Players; // static CPlayerInfo Players[MAX_PLAYERS]

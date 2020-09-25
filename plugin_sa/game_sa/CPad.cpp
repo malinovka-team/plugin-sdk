@@ -149,13 +149,13 @@ bool CPad::ExitVehicleJustDown() {
 }
 
 // Converted from thiscall uchar CPad::GetMeleeAttack(void) 0x540340
-unsigned char CPad::GetMeleeAttack() {
-    return plugin::CallMethodAndReturn<unsigned char, 0x540340, CPad *>(this);
+unsigned char CPad::GetMeleeAttack(unsigned char unk) {
+    return plugin::CallMethodAndReturn<unsigned char, 0x540340, CPad *, unsigned char>(this, unk);
 }
 
 // Converted from thiscall uchar CPad::MeleeAttackJustDown(void) 0x540390
-unsigned char CPad::MeleeAttackJustDown() {
-    return plugin::CallMethodAndReturn<unsigned char, 0x540390, CPad *>(this);
+unsigned char CPad::MeleeAttackJustDown(unsigned char unk) {
+    return plugin::CallMethodAndReturn<unsigned char, 0x540390, CPad *, unsigned char>(this, unk);
 }
 
 // Converted from thiscall short CPad::GetAccelerate(void) 0x5403F0
