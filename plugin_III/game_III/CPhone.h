@@ -1,5 +1,5 @@
 /*
-    Plugin-SDK (Grand Theft Auto Vice City) header file
+    Plugin-SDK (Grand Theft Auto 3) header file
     Authors: GTA Community. See more here
     https://github.com/DK22Pac/plugin-sdk
     Do not delete this comment block. Respect others' work!
@@ -9,6 +9,7 @@
 #include "PluginBase.h"
 #include "CVector.h"
 #include "CBuilding.h"
+#include "ePhoneState.h"
 
 class PLUGIN_API CPhone {
     PLUGIN_NO_DEFAULT_CONSTRUCTION(CPhone)
@@ -18,7 +19,7 @@ public:
     wchar_t *m_pMessages[6];
     int m_nStartTimer;
     CBuilding *m_pEntity;
-    int m_nState;
+    ePhoneState m_nState;
     char m_bPlayerIsClose;
 private:
     char _pad31[3];
