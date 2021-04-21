@@ -7,6 +7,7 @@
 #pragma once
 #include "PluginBase.h"
 #include "CVehicle.h"
+#include "tBikeHandlingData.h"
 
 struct tBikeHandlingData;
 
@@ -35,7 +36,7 @@ public:
     unsigned char  m_nDamageFlags;
     char field_615[27];
     CVector field_630;
-    void          *m_pBikeHandlingData;
+    tBikeHandlingData *m_pBikeHandlingData;
     CRideAnimData  m_rideAnimData;
     unsigned char  m_anWheelDamageState[2];
     char field_65E;

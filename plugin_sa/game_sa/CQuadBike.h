@@ -9,6 +9,7 @@
 #include "PluginBase.h"
 #include "CAutomobile.h"
 #include "CRideAnimData.h"
+#include "tBikeHandlingData.h"
 
 enum eQuadBikeNodes {
     QUAD_NODE_NONE = 0,
@@ -38,7 +39,7 @@ class CQuadBike : public CAutomobile {
 protected:
     CQuadBike(plugin::dummy_func_t) : CAutomobile(plugin::dummy) {}
 public:
-    void          *m_pHandling;
+    tBikeHandlingData *m_pHandling;
     CRideAnimData  m_rideAnimData;
     float field_9A8;
     int field_9AC;
