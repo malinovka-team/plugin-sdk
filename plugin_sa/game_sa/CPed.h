@@ -13,7 +13,7 @@
 #include "CAEPedSpeechAudioEntity.h"
 #include "CAEWeaponAudioEntity.h"
 #include "CPedIntelligence.h"
-#include "CPlayerPedData.h"
+#include "CPlayerData.h"
 #include "AnimBlendFrameData.h"
 #include "CPedAcquaintance.h"
 #include "CPedIK.h"
@@ -200,7 +200,7 @@ public:
         unsigned int bUsedForReplay : 1; // This ped is controlled by replay and should be removed when replay is done.
     } m_nPedFlags;
     CPedIntelligence   *m_pIntelligence;
-    CPlayerPedData     *m_pPlayerPedData;
+    CPlayerData        *m_pPlayerData;
     unsigned int        m_nCreatedBy;
     AnimBlendFrameData *m_apBones[19];
     unsigned int        m_nAnimGroup;

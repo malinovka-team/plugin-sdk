@@ -17,7 +17,7 @@ class CEntity;
 class CPed;
 class CCopPed;
 
-class PLUGIN_API CPlayerPedData {
+class PLUGIN_API CPlayerData {
 public:
     CWanted * m_pWanted;
     CPedClothesDesc *m_pPedClothesDesc;
@@ -92,4 +92,4 @@ public:
     CPed *m_pLastProstituteShagged;
 };
 
-VALIDATE_SIZE(CPlayerPedData, 0xAC);
+VALIDATE_SIZE(CPlayerData, 0xAC);
